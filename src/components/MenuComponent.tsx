@@ -1,11 +1,11 @@
-import { ButtonLogin } from "./ButtonLogin";
-import { DivWrapper } from "./DivWrapper";
-import { Header } from "./Header";
-import { Icon } from "./Icon";
-import { Logo } from "./Logo";
-import { SearchIcon } from "./SearchIcon";
-import { SearchInputWrapper } from "./SearchIconWrapper";
-import { SearchInput } from "./SearchInput";
+import { ButtonLogin } from "../styles/Components/ButtonLogin";
+import { DivWrapper } from "../styles/Components/DivWrapper";
+import { Header } from "../styles/Components/Header";
+import { Icon } from "../styles/Components/Icon";
+import { Logo } from "../styles/Components/Logo";
+import { SearchIcon } from "../styles/Components/SearchIcon";
+import { SearchInputWrapper } from "../styles/Components/SearchIconWrapper";
+import { SearchInput } from "../styles/Components/SearchInput";
 
 function MenuComponent () {
     return (
