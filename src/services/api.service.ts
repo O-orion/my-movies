@@ -15,3 +15,8 @@ export const fetchPopularMovies = async () => {
   const response = await api.get('/movie/popular');
   return response.data.results;
 };
+
+export const fetchDeatialsMovie =  async (id: number) => {
+  const response = await api.get(`/movie/${id}`)
+  return response.data;
+}

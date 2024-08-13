@@ -1,9 +1,10 @@
-import { DivGrid, FeaturedMovie, HighlightsList } from "../styles/Components/DivGrid";
+import { DivGrid,HighlightsList } from "../styles/Components/DivGrid";
 import { useMoviesStore } from "../store/movieStore";
 import { useEffect } from "react";
 import ListMovieFeatured from "./ListMovieFeatured";
 import { Movie } from "../types/movie";
 import { TextMovieFeatured } from "../styles/Components/TextMovieFeatured";
+import MainMovieCard from "./MainFilmCard";
 
 function FeaturedMoviesComponent() {
     const { movies, fetchMovies } = useMoviesStore();
@@ -18,10 +19,10 @@ function FeaturedMoviesComponent() {
     }
     
     const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
-
+    console.log(movies[0])
     return (
         <DivGrid>
-            <FeaturedMovie $imageUrl={`${IMAGE_BASE_URL}${movies[0].poster_path}`}></FeaturedMovie>
+            <MainMovieCard  IMAGE_BASE_URL={IMAGE_BASE_URL} movie={movies[0] as Movie} ></MainMovieCard>
             <HighlightsList>
                 <TextMovieFeatured>Destaque Também</TextMovieFeatured>
                 {movies.slice(1, 4).map((movie) => (

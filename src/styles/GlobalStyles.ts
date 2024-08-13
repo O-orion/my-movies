@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     background-color: ${({ theme }) => theme.colors.background};
   }
 `

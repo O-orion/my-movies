@@ -28,7 +28,7 @@ function ListMovieFeatured({ movie, IMAGE_BASE_URL }: Props) {
 
       <ContainerDetailsMovie>
         <TituleMovie>{movie.title}</TituleMovie>
-        <ButtonWatchTrailler> Assitir ao Trailer
+        <ButtonWatchTrailler width="50%"> Assitir ao Trailer
             <IconPlay className="material-symbols-outlined">play_arrow</IconPlay>
         </ButtonWatchTrailler>
       </ContainerDetailsMovie>

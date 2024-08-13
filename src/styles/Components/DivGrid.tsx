@@ -18,6 +18,7 @@ export const FeaturedMovie = styled.div<{$imageUrl: string}>`
   background-repeat: no-repeat;
   border-radius: 10px;
   opacity: 0.4;
+  
 `;
 
 export const HighlightsList = styled.div`
