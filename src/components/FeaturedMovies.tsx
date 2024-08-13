@@ -15,7 +15,7 @@ function FeaturedMoviesComponent() {
     if (!movies || movies.length === 0) {
         return <div>Loading...</div>;
     }
-    console.log(movies[0])
+    
     const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
     return (

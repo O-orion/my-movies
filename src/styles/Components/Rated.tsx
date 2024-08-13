@@ -8,6 +8,8 @@ export const ContainerRated = styled.section`
     display: flex;
     align-items: center;
     gap: 10px;
+    opacity: 1;
+    z-index: 2000;
 `
 export const RatedWrapper = styled.div`
 
