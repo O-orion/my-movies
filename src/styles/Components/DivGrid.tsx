@@ -17,7 +17,7 @@ export const FeaturedMovie = styled.div<{$imageUrl: string}>`
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
-  opacity: 0.7;
+  opacity: 0.4;
 `;
 
 export const HighlightsList = styled.div`
@@ -44,7 +44,7 @@ export const HighlightItem = styled.div<{$imageUrl: string}>`
     background-size: 100% 120%;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.7;
+    opacity: 0.4;
     position: absolute;
     top: 0;
     left: 0;

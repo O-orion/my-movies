@@ -3,6 +3,7 @@ import { useMoviesStore } from "../store/movieStore";
 import { useEffect } from "react";
 import ListMovieFeatured from "./ListMovieFeatured";
 import { Movie } from "../types/movie";
+import { TextMovieFeatured } from "../styles/Components/TextMovieFeatured";
 
 function FeaturedMoviesComponent() {
     const { movies, fetchMovies } = useMoviesStore();
@@ -22,6 +23,7 @@ function FeaturedMoviesComponent() {
         <DivGrid>
             <FeaturedMovie $imageUrl={`${IMAGE_BASE_URL}${movies[0].poster_path}`}></FeaturedMovie>
             <HighlightsList>
+                <TextMovieFeatured>Destaque Também</TextMovieFeatured>
                 {movies.slice(1, 4).map((movie) => (
                     <ListMovieFeatured key={movie.id} IMAGE_BASE_URL={IMAGE_BASE_URL} movie={movie as Movie} ></ListMovieFeatured>
                 ))}
