@@ -27,7 +27,7 @@ export const HighlightsList = styled.div`
   gap: 10px; /* Espaço entre os destaques */
   overflow-y: auto; /* Permite rolar se houver mais itens do que o espaço disponível */
   height: 100%; /* Garante que a lista ocupe toda a altura disponível */
-  width: 95%;
+  width: 80%;
   overflow: hidden;
 `;
 

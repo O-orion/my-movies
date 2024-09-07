@@ -13,9 +13,9 @@ export const ContainerDetailsMovie = styled.section`
     opacity: 1;
 `
 
-export const TituleMovie = styled.h2`
+export const TituleMovie = styled.h2<{fontSize?: string}>`
 color: white;
-font-size: 17px;
+font-size: ${(props) => props.fontSize || '17px'};
 `
 
 export const IconPlay = styled.span``
