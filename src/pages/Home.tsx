@@ -1,4 +1,5 @@
 import FeaturedMoviesComponent from "../components/FeaturedMovies";
+import LatestReleases from "../components/LatestReleases";
 import MenuComponent from "../components/MenuComponent";
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
         <>
             <MenuComponent></MenuComponent>
             <FeaturedMoviesComponent></FeaturedMoviesComponent>
+            <LatestReleases></LatestReleases>
         </>
     )
 }
