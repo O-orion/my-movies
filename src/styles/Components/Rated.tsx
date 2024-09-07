@@ -11,12 +11,12 @@ export const ContainerRated = styled.section`
     opacity: 1;
     z-index: 2000;
 `
-export const RatedWrapper = styled.div`
-
+export const RatedWrapper = styled.div<{width?: string, margin?: string}>`
+    width: ${(props) => props.width || 'auto'};
     background-color: #5d5f61ad;
     padding: 7px;
     border-radius: 10px;
-
+    margin: ${(props) => props.margin || 0};
     display: flex;
     align-items: center;
     gap: 5px;

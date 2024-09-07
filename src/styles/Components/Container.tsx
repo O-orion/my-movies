@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
 
-  padding: 0 20px;
+  padding: 0 30px;
   margin: 5px 0 10px 0;
   width: 100%;
   overflow: hidden;

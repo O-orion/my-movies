@@ -28,6 +28,11 @@ type DetailMovie = {
     fetchMovie: (id: number) => void;
 }
 
+type PopularMovie = {
+    popularMovie: Movie[]
+    fetchMovie: () => void
+}
+
 export const useMoviesStore = create<MoviesState>((set) => ({
     movies: [],
     fetchMovies: async () => {
@@ -41,5 +46,13 @@ export const useMovieDetails =  create<DetailMovie> ((set) => ({
     fetchMovie: async (id: number) => {
         const detailMovie = await fetchDeatialsMovie(id)
         set({ detailMovie })
+    }
+}))
+
+export const usePopularMovie = create<PopularMovie>((set) => ({
+    popularMovie: [],
+    fetchMovie: async () => {
+        const popularMovie = await fetchPopularMovies()
+        set({popularMovie})
     }
 }))

@@ -20,3 +20,8 @@ export const fetchDeatialsMovie =  async (id: number) => {
   const response = await api.get(`/movie/${id}`)
   return response.data;
 }
+
+export const fetchPopularMovie =  async () => {
+  const response = await api.get(`/movie/popular`)
+  return response.data
+}

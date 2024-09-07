@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const TextDetailMovie = styled.p`
-    color: #d2d2d2;
-    font-size: 15px;
+export const TextDetailMovie = styled.p<{fontSize?: string}>`
+    color: #f4f3f3;
+    font-size: ${(props) => props.fontSize || '15px'};
     font-weight: 400;
 
     span {
